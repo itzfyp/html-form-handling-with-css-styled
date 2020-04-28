@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Handling with CSS hands on</title>
+</head>
+
+<body>
+    <main>
+        <div class="register card">
+            <form>
+
+                <div class="form-group">
+                    <label class="form-label" for="username">Username</label>
+                    <input class="form-control" type="text" id="username" name="username"
+                        placeholder="please enter your name" />
+                    <p class="validation-message">please enter valid name</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-control" type="email" id="email" name="email"
+                        placeholder="please enter your email id" />
+                    <p class="validation-message">please enter valid email</p>
+                </div>
+
+                <div class="form-group inline">
+                    <label class="form-label" for="gender">Gender</label>
+                    <label><input class="form-control" type="radio" id="gender" name="gender" value="male" />
+                        Male</label>
+                    <label><input class="form-control" type="radio" name="gender" value="female" /> Female</label>
+                    <p class="validation-message">please select required field.</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="department">Department</label>
+                    <select id="department" name="department" class="form-control">
+                        <option value="" selected>--- select ---</option>
+                        <option value="xt-mobile">XT - mobile</option>
+                        <option value="xt-web">XT - web</option>
+                    </select>
+                    <p class="validation-message">please select any of the option listed</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" id="password" name="password"
+                        placeholder="please enter password" />
+                    <p class="validation-message">please enter valid password</p>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="confirmpassword">Confirm Password</label>
+                    <input class="form-control" type="password" id="confirmpassword" name="confirmpassword"
+                        placeholder="please enter confirmation password" />
+                    <p class="validation-message">password mismatch</p>
+                </div>
+
+                <div class="form-group">
+                    <button class="btn">Sing up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
